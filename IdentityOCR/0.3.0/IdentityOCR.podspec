@@ -37,7 +37,8 @@ Pod::Spec.new do |s|
   # }
 
     s.public_header_files = 'IdentityOCR/Classes/**/*.h'
-    s.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'IDENTITY_OCR' }
+    #s.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'IDENTITY_OCR' => 'YES' }Classes
+    s.pod_target_xcconfig = { 'IDENTITY_OCR' => 'YES' }
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
